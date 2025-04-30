@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Serviços | Bispo e Neto Soluções Jurídicas</title>
+  <meta charset="UTF-8">
+  <title>Bispo e Neto Soluções Jurídicas</title>
   <style>
     body {
       background-color: #113839;
@@ -25,7 +25,7 @@
       background-image: url('BISPO.png');
       background-repeat: no-repeat;
       background-size: 600px;
-      opacity: 0.5;
+      opacity: 0.50;
       width: 600px;
       height: 600px;
       z-index: 0;
@@ -54,7 +54,7 @@
     .conteudo {
       flex: 1;
       max-width: 800px;
-      margin: 40px auto;
+      margin: 60px auto;
       padding: 20px;
       font-size: 18px;
       line-height: 1.6;
@@ -64,34 +64,27 @@
 
     h2 {
       color: whitesmoke;
-      text-align: center;
     }
 
     ul.servicos {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
     }
 
     ul.servicos > li {
-      margin: 15px 0;
+      margin-bottom: 15px;
       position: relative;
     }
 
-    .submenu {
+    ul.subservicos {
       display: none;
-      list-style: none;
+      list-style-type: disc;
       padding-left: 20px;
-      margin-top: 5px;
+      margin-top: 8px;
     }
 
-    ul.servicos > li:hover .submenu {
+    ul.servicos > li:hover ul.subservicos {
       display: block;
-    }
-
-    .submenu li {
-      margin: 8px 0;
-      font-size: 16px;
-      color: #ccc;
     }
 
     footer {
@@ -99,7 +92,6 @@
       text-align: center;
       padding: 20px 0;
       z-index: 1;
-      margin-top: 40px;
     }
 
     .footer-icones a {
@@ -121,20 +113,19 @@
     }
   </style>
 </head>
+
 <body>
   <nav>
     <a href="index.html">Início</a>
-    <a href="quem-somos.html">Quem Somos</a>
     <a href="servicos.html">Serviços</a>
     <a href="contato.html">Contato</a>
   </nav>
 
   <div class="conteudo">
-    <h2>Nossos Serviços</h2>
+    <h2>Serviços</h2>
     <ul class="servicos">
-      <li>
-        Trânsito
-        <ul class="submenu">
+      <li>Trânsito
+        <ul class="subservicos">
           <li>Recurso de Multas</li>
           <li>Recurso de Suspensão ou Cassação de CNH</li>
           <li>Acidente de Trânsito</li>
