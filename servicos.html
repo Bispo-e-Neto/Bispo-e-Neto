@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bispo e Neto Soluções Jurídicas</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #113839;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('BISPO.png');
+      background-repeat: no-repeat;
+      background-size: 600px;
+      opacity: 0.5;
+      width: 600px;
+      height: 600px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    nav {
+      background-color: #0b2324;
+      padding: 15px;
+      text-align: center;
+      z-index: 1;
+    }
+
+    nav a {
+      color: whitesmoke;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: whitesmoke;
+      z-index: 1;
+    }
+
+    .conteudo {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+    }
+
+    footer {
+      background-color: #0b2324;
+      text-align: center;
+      padding: 20px 0;
+      z-index: 1;
+    }
+
+    .footer-icones a {
+      margin: 0 15px;
+      display: inline-block;
+    }
+
+    .footer-icones img {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      filter: brightness(0.95);
+    }
+
+    footer p {
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="quem-somos.html">Quem Somos</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="conteudo">
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>Regularização de Veículos e CNHs</li>
+      <li>Recursos de Multas de Trânsito, Suspensão e Cassação de CNH</li>
+      <li>Auxílio com Requerimento de Benefícios Previdenciários e Sociais</li>
+      <li>Regularização de Imóveis</li>
+      <li>Cálculos de Direitos Trabalhistas</li>
+      <li>Regularização de MEI</li>
+    </ul>
+  </div>
+
+  <footer>
+    <div class="footer-icones">
+      <a href="https://wa.me/5511915530498" target="_blank" title="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </a>
+      <a href="mailto:contato@bispoeneto.com" title="E-mail">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a>
+      <a href="https://www.instagram.com/bispoeneto.solucoesjuridicas" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+    </div>
+    <p>&copy; 2025 Bispo e Neto Soluções Jurídicas. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
