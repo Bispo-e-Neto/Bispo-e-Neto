@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Bispo e Neto Soluções Jurídicas</title>
+  <meta charset="UTF-8" />
+  <title>Serviços | Bispo e Neto Soluções Jurídicas</title>
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
+    body {
       background-color: #113839;
       color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
@@ -50,13 +51,8 @@
       text-decoration: underline;
     }
 
-    h1, h2 {
-      text-align: center;
-      color: whitesmoke;
-      z-index: 1;
-    }
-
     .conteudo {
+      flex: 1;
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
@@ -64,7 +60,38 @@
       line-height: 1.6;
       position: relative;
       z-index: 1;
-      flex: 1;
+    }
+
+    h2 {
+      color: whitesmoke;
+      text-align: center;
+    }
+
+    ul.servicos {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.servicos > li {
+      margin: 15px 0;
+      position: relative;
+    }
+
+    .submenu {
+      display: none;
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    ul.servicos > li:hover .submenu {
+      display: block;
+    }
+
+    .submenu li {
+      margin: 8px 0;
+      font-size: 16px;
+      color: #ccc;
     }
 
     footer {
@@ -72,6 +99,7 @@
       text-align: center;
       padding: 20px 0;
       z-index: 1;
+      margin-top: 40px;
     }
 
     .footer-icones a {
@@ -93,7 +121,6 @@
     }
   </style>
 </head>
-
 <body>
   <nav>
     <a href="index.html">Início</a>
@@ -104,13 +131,19 @@
 
   <div class="conteudo">
     <h2>Nossos Serviços</h2>
-    <ul>
-      <li>Regularização de Veículos e CNHs</li>
-      <li>Recursos de Multas de Trânsito, Suspensão e Cassação de CNH</li>
-      <li>Auxílio com Requerimento de Benefícios Previdenciários e Sociais</li>
-      <li>Regularização de Imóveis</li>
-      <li>Cálculos de Direitos Trabalhistas</li>
-      <li>Regularização de MEI</li>
+    <ul class="servicos">
+      <li>
+        Trânsito
+        <ul class="submenu">
+          <li>Recurso de Multas</li>
+          <li>Recurso de Suspensão ou Cassação de CNH</li>
+          <li>Acidente de Trânsito</li>
+        </ul>
+      </li>
+      <li>Benefícios Previdenciários e Sociais</li>
+      <li>Imóveis</li>
+      <li>Direitos Trabalhistas</li>
+      <li>MEI</li>
     </ul>
   </div>
 
